@@ -13,7 +13,11 @@ module.exports = {
         use: ['style-loader', 'css-loader']
       },
       {
-        test: /\.(png|jpg|jpeg|gig|svg|)$/,
+        test: /\.(png|jpg|jpeg|gig|svg)$/,
+        use: ['file-loader']
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: ['file-loader']
       }
     ]
